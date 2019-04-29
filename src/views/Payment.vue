@@ -56,7 +56,7 @@
                 <a href="pangavalimine.html" class="btn btn-success my-2 my-sm-0" role="button" style="margin: 5px">Tagasi</a>
             </router-link>
             <router-link to="/ThankYou">
-                <a href="thank.html" class="btn btn-success my-2 my-sm-0" role="button">Maksa</a>
+                <a href="thank.html" class="btn btn-success my-2 my-sm-0" role="button" v-on:click="emptyShoppingCart()">Maksa</a>
             </router-link>
         </div>
     </div>
@@ -64,7 +64,12 @@
 
 <script>
     export default {
-        name: "HowToPay"
+        name: "HowToPay",
+        methods: {
+            emptyShoppingCart: function () {
+                this.$shoppingCart.splice(0, this.$shoppingCart.length)
+            }
+        }
     }
 </script>
 

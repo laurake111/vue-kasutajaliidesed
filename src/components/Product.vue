@@ -11,12 +11,12 @@
                     <h3>{{ name }}</h3>
                     <p>{{ description }}</p>
                     <p>
-                        <router-link to="/ProductDetailView">
+                        <router-link :to="{name:'ProductDetailView', params: {id:index}}">
                             <a href="product_detail.html" class="btn btn-outline-success my-2 my-sm-0" role="button">Vaata toodet</a>
                         </router-link>
 
 
-                        <button class="btn btn-default" v-on:click="say('lisatud ostukorvi')">Lisa ostukorvi</button></p>
+                        <button class="btn btn-default" v-on:click="addToShoppingCart()">Lisa ostukorvi</button></p>
 
                 </div>
             </div>
@@ -37,7 +37,10 @@
         },
         methods: {
             say: function (message) {
-                alert(message)
+                alert(message + this.index)
+            },
+            addToShoppingCart: function () {
+                this.$shoppingCart.push({name: this.name, kogus: 1, hind: this.hind})
             }
         }
     }

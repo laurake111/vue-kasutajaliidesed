@@ -27,7 +27,10 @@
                         </router-link>
 
                     </li>
-                    <a class="nav-link d-none d-lg-block" href="ostukorv.html">Ostukorv</a>
+                    <router-link to="/ShoppingCart">
+                        <a class="nav-link d-none d-lg-block" href="">Ostukorv({{ shoppingCart.length }})</a>
+                    </router-link>
+
                 </ul>
                 <ul class="navbar-nav d-none d-lg-block" id="search">
                     <li>
@@ -68,7 +71,12 @@
 
 <script>
     export default {
-        name: "Header"
+        name: "Header",
+        data: function () {
+            return {
+                shoppingCart: this.$shoppingCart
+            }
+        }
     }
 </script>
 

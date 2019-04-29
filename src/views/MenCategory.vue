@@ -8,7 +8,7 @@
             <div class="col-9">
                 <div class="row">
 
-                    <Product v-for="p in $options.products" v-bind="p"></Product>
+                    <Product v-for="(p, key) in $socks " v-bind="p" v-bind:index="key"></Product>
 
                 </div>
             </div>
@@ -21,12 +21,11 @@
 <script>
     import Sort from '../components/Sort.vue'
     import Product from '../components/Product.vue'
-    import json from "../sock.json"
+
 
 
     export default {
         name: "MenCategory",
-        products: json,
         components: {
             Sort, Product
         }

@@ -25,7 +25,7 @@ const router = new VueRouter({
             component: MenCategory
         },
         {
-            path: '/ProductDetailView',
+            path: '/ProductDetailView/:id',
             name: 'ProductDetailView',
             component: ProductDetailView
         },
