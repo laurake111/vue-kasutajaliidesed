@@ -1,0 +1,78 @@
+.current {
+  color: green;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: lightgreen;
+}
+
+.jumbotron {
+  background-image: url("assets/kevad.jpg");
+  background-size: auto;
+  background-blend-mode: overlay ;
+}
+
+.jumbotron:hover {
+  background-image: url("assets/kevad.jpg");
+  background-blend-mode: normal;
+}
+
+#banner {
+  //background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.c-footer {
+
+}
+
+#bottom-row-nav-a:hover{
+  background-color: lightgreen;
+  color: white;
+}
+
+#bottom-row-nav-li{
+  width: 200px;
+  text-align: center;
+}
+
+.vl {
+  border-bottom: 6px solid green;
+  border-left: none;
+  width: 500px;
+  height: 0;
+}
+
+@media (min-width: 992px){
+  .w-100-lg {
+    display: block!important;
+  }
+
+  .justify-content-center-lg {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+  }
+
+  .vl{
+
+    border-left: 6px solid green;
+    border-bottom: none;
+    height: 500px;
+    width: 0;
+  }
+
+}
+
+
+#ostukorv {
+  padding-right: 15px;
+}
+
+#search {
+  padding-right: 25px;
+}

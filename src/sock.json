@@ -1,0 +1,43 @@
+{
+  "1":{
+    "image": "/adidas.jpg",
+    "name": "Adidas",
+    "description": "tunneta endas slaavi verd",
+    "hind": 10
+  },
+  "2":{
+    "image": "/bananas.jpg",
+    "name": "Banaanid",
+    "description": "tervita kevadet banaani sokkidega",
+    "hind": 8
+
+  },
+  "3":{
+    "image": "/donut.jpg",
+    "name": "Söörikud",
+    "description": "sokid, mis ajavad näljaseks",
+    "hind": 7
+
+  },
+  "4":{
+    "image": "/llama.jpg",
+    "name": "Laamad",
+    "description": "laamad on pehmed xd",
+    "hind": 8
+
+  },
+  "5":{
+    "image": "/shark.jpg",
+    "name": "Haikalad",
+    "description": "hirmuta teisi oma hai sokkidega",
+    "hind": 9
+
+  },
+  "6":{
+    "image": "/unicorn.jpg",
+    "name": "Ükssarvikud",
+    "description": "tunne ennast eriliselt nagu ükssarvikud",
+    "hind": 10
+
+  }
+}
