@@ -8,6 +8,7 @@ import Payment from '@/views/Payment'
 import ThankYou from '@/views/ThankYou'
 import ShoppingCart from '@/views/ShoppingCart'
 import UserContacts from '@/views/UserContacts'
+import Dashboard from '@/views/Dashboard'
 
 
 Vue.use(VueRouter);
@@ -53,6 +54,11 @@ const router = new VueRouter({
             path: '/UserContacts',
             name: 'UserContacts',
             component: UserContacts
+        },
+        {
+            path: '/Dashboard',
+            name: 'Dashboard',
+            component: Dashboard
         }
 ]});
 

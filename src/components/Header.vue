@@ -63,6 +63,11 @@
                     <li class="nav-item" id="bottom-row-nav-li">
                         <a class="nav-link" href="#" id="bottom-row-nav-a">Kontakt</a>
                     </li>
+                    <li class="nav-item" id="bottom-row-nav-li">
+                        <router-link to="/Dashboard">
+                            <a class="nav-link" href="#" id="bottom-row-nav-a">Dashboard</a>
+                        </router-link>
+                    </li>
                 </ul>
             </div>
         </div>
