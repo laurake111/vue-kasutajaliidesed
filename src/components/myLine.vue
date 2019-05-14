@@ -13,7 +13,12 @@
             }
         },
         mounted() {
-            this.renderChart(this.chartdata, this.options)
+            fetch(this.chartdata).then(resp => {
+                return resp.json()
+            }).then( json => {
+                this.datacollection = json;
+                this.renderChart(this.datacollection, this.options)
+            });
         }
     }
 </script>

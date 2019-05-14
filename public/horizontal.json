@@ -1,0 +1,10 @@
+{
+  "labels": ["Africa", "Asia", "Europe", "Latin America", "North America"],
+  "datasets": [
+    {
+      "label": "Percentage %",
+      "backgroundColor": ["#AAAAA", "#2ECC40", "#FFDC00", "#7FDBFF", "#F012BE"],
+      "data": [1, 10, 60, 9, 20]
+    }
+    ]
+}

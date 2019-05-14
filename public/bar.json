@@ -1,0 +1,10 @@
+{
+  "labels": ["Jaanuar", "Veebruar", "Märts", "April", "Mai", "Juuni", "Juuli","August","September", "Oktoober", "November", "Detsember"],
+  "datasets": [
+    {
+      "label": "~ amount of people",
+      "backgroundColor": "#f87979",
+      "data": [900, 850, 740, 800, 950, 800, 750, 800, 900, 1000, 1100, 1270]
+    }
+  ]
+}

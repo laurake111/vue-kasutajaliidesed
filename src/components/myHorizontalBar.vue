@@ -4,16 +4,11 @@
     export default {
         extends: HorizontalBar,
         name: "MyHorizontalBar",
+        props: {
+            chartdata: String
+        },
         data: () => ({
             datacollection: {
-                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-                datasets: [
-                    {
-                        label: "Population (millions)",
-                        backgroundColor: ["#AAAAA", "#2ECC40", "#FFDC00", "#7FDBFF", "#F012BE"],
-                        data: [10, 100,1000,200,800]
-                    }
-                ]
             },
             options: {
                 responsive: true,
@@ -22,7 +17,12 @@
         }),
 
         mounted () {
-            this.renderChart(this.datacollection, this.options)
+            fetch(this.chartdata).then(resp => {
+                return resp.json()
+            }).then( json => {
+                this.datacollection = json;
+                this.renderChart(this.datacollection, this.options)
+            });
         }
     }
 </script>

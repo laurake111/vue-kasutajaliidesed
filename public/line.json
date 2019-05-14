@@ -1,0 +1,8 @@
+{
+  "labels": ["Jaanuar", "Veebruar", "Märts", "April", "Mai", "Juuni", "Juuli","August","September", "Oktoober", "November", "Detsember"],
+  "datasets": [{
+    "label": "Profit €",
+    "backgroundColor": "#B0E0E6",
+    "data": [600, 550, 740, 400, 350, 400, 550, 700, 600, 700, 900, 1000]
+  }]
+}

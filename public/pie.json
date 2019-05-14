@@ -1,0 +1,8 @@
+{
+  "labels": ["Cotton", "Wool", "Nylon", "Polyester", "Acryllic"],
+  "datasets": [{
+    "label": "products bought €",
+    "backgroundColor": ["#F012BE", "#2ECC40", "#FFDC00", "#7FDBFF", "#AAAAAA"],
+    "data": [2478, 5267, 734, 784, 433]
+  }]
+}

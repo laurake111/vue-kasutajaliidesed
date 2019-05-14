@@ -1,12 +1,8 @@
 <template>
     <div class="col-sm-6 col-md-4">
-
-
-
         <div class="card" >
             <img v-bind:src="image" class="rounded w-100 d-block " alt="...">
             <div class="caption text-center">
-
                 <div>
                     <h3>{{ name }}</h3>
                     <p>{{ description }}</p>
@@ -14,10 +10,7 @@
                         <router-link :to="{name:'ProductDetailView', params: {id:index}}">
                             <a href="product_detail.html" class="btn btn-outline-success my-2 my-sm-0" role="button">Vaata toodet</a>
                         </router-link>
-
-
                         <button class="btn btn-default" v-on:click="addToShoppingCart()">Lisa ostukorvi</button></p>
-
                 </div>
             </div>
         </div>

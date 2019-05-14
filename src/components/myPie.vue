@@ -4,14 +4,10 @@
     export default {
         name: "myPie",
         extends: Pie,
+        props: ['chartdata'],
         data: () => ({
             datacollection: {
-                labels: ["Cotton", "Wool", "Nylon", "Polyester", "Acryllic"],
-                datasets: [{
-                    label: "Population (millions)",
-                    backgroundColor: ["#F012BE", "#2ECC40", "#FFDC00", "#7FDBFF", "#AAAAAA"],
-                    data: [2478, 5267, 734, 784, 433]
-                }]
+
             }
         }),
         options: {
@@ -19,7 +15,12 @@
             maintainAspectRatio: false
         },
         mounted() {
-            this.renderChart(this.datacollection, this.options)
+            fetch(this.chartdata).then(resp => {
+                return resp.json()
+            }).then( json => {
+                this.datacollection = json;
+                this.renderChart(this.datacollection, this.options)
+            });
         }
     }
 

@@ -26,7 +26,7 @@
                        </p>
                    </div>
 
-                   <img src="../assets/products.jpg"  width="300" height="350" class="rounded mx-auto d-block ">
+                   <img src="../assets/products.jpg" width="300" height="350" class="rounded mx-auto d-block ">
                </div>
            </div>
        </div>
